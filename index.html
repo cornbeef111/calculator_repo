@@ -11,43 +11,43 @@
 
 <body>
   <main>
-      <h1> My first Calculator </h1>
+      <!-- <h1> My first Calculator </h1> -->
   	<section id="calc">
   	     <table>
   	     	<tr>
-  	     		<td colspan="4"> <input type="text" name="result" class="for-input"></td>
+  	     		<td colspan="4"> <input type="text" name="result" class="for-input display-js"></td>
   	     	</tr>
 
   	     	<tr>
   	     		<td class="flex"><input type="button" value="CA"></td>
   	     		<td class="flex"><input type="button" value="%"></td>
-  	     		<td class="flex"><input type="button" value="&otimes;"></td>
+  	     		<td class="flex"><input type="button" value="M"></td>
   	     		<td class="flex"><input type="button" value="&divide;"></td>
   	     	</tr>
 
   	     	<tr>
-  	     		<td> <input type="button" value="7"> </td>
-  	     		<td> <input type="button" value="8"> </td>
-  	     		<td> <input type="button" value="9"> </td>
+  	     		<td> <input type="button" value="7" class="n" data-index='7'> </td>
+  	     		<td> <input type="button" value="8" class="n" data-index='8'> </td>
+  	     		<td> <input type="button" value="9" class="n" data-index='9'> </td>
   	     		<td class="flex"> <input type="button" value="X"> </td>
   	     	</tr>
 
   	     	<tr>
-  	     		<td> <input type="button" value="4"> </td>
-  	     		<td> <input type="button" value="5"> </td>
-  	     		<td> <input type="button" value="6"> </td>
+  	     		<td> <input type="button" value="4" class="n" data-index='4'> </td>
+  	     		<td> <input type="button" value="5" class="n" data-index='5'> </td>
+  	     		<td> <input type="button" value="6" class="n" data-index='6'> </td>
   	     		<td class="flex"> <input type="button" value="-"> </td>
   	     	</tr>
 
   	     	<tr>
-  	     		<td> <input type="button" value="1"> </td>
-  	     		<td> <input type="button" value="2"> </td>
-  	     		<td> <input type="button" value="3"> </td>
+  	     		<td> <input type="button" value="1" class="n" data-index='1'> </td>
+  	     		<td> <input type="button" value="2" class="n" data-index='2'> </td>
+  	     		<td> <input type="button" value="3" class="n" data-index='3'> </td>
   	     		<td class="flex"> <input type="button" value="+"> </td>
   	     	</tr>
 
   	     	<tr>
-  	     		<td> <input type="button" value="0"> </td>
+  	     		<td> <input type="button" value="0" class="n" data-index='0'> </td>
   	     		<td> <input type="button" value="."> </td>
   	     		<td colspan="2" class="flex" id="flow"> <input type="button" value="="> </td> 	     		
   	     	</tr>
@@ -55,7 +55,9 @@
   		
   	</section>
   </main>
+   
 
+  <script type="module" src="scripts/calScript.js"></script>
 
 </body>
 </html>
