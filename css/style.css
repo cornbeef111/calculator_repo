@@ -3,7 +3,6 @@
         }
 
      	body{
-     		/* background-color: black; */
      		margin: 0px;
      		border: 0px;
      	}
@@ -45,8 +44,23 @@
           /* padding: px; */
 
      }
-
-     input[type="button"] {
+     button:hover{
+          background-color: #232023;
+     }
+    .flex button{
+           background-color: rgb(1,15,28);
+     }
+     .flex button:hover{
+          background-color:gray;
+     }
+     #flow button{
+          border-radius: 40px;
+          background-color: rgb(1,21,38);
+     }
+     #flow button:hover{
+          background-color: gray;
+     }
+     button{
           width: 100%;
           font-size: 20px;
           background-color: grey;
@@ -54,21 +68,14 @@
           border: none;
           border-radius: 45%;
           padding: 8px;
-          margin-top: 10px;
+          margin-top: 10px;  
      }
-     input[type="button"]:hover{
-          background-color: #232023;
+     .forDisplay{
+          background-color: black;
+          text-align: right;
+          padding-right: 5px;
+          font-size: 25px;
      }
-    .flex input[type="button"]{
-           background-color: rgb(1,15,28);
-     }
-     .flex input[type="button"]:hover{
-          background-color:gray;
-     }
-     #flow input[type="button"]{
-          border-radius: 40px;
-          background-color: rgb(1,21,38);
-     }
-     #flow input[type="button"]:hover{
-          background-color: gray;
+     .forDisplay p{
+          padding: 3px;
      }

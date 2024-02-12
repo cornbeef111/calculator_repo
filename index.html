@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="css/all.min.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
-	<title>Calculator</title>
+	<title> Calculator </title>
 </head>
 
 
@@ -15,49 +15,53 @@
   	<section id="calc">
   	     <table>
   	     	<tr>
-  	     		<td colspan="4"> <input type="text" name="result" class="for-input display-js"></td>
+  	     		<td colspan="4" class="for-input"> 
+					<div> 
+						<p class="forDisplay"></p>
+					 </div>
+			   </td>
   	     	</tr>
 
   	     	<tr>
-  	     		<td class="flex"><input type="button" value="CA"></td>
-  	     		<td class="flex"><input type="button" value="%"></td>
-  	     		<td class="flex"><input type="button" value="M"></td>
-  	     		<td class="flex"><input type="button" value="&divide;"></td>
+  	     		<td class="flex"><button onclick="clearDisplay()">CA</button></td>
+  	     		<td class="flex"><button onclick="getOperator('%')">%</button></td>
+  	     		<td class="flex"><button onclick="getOperator()">M</button></td>
+  	     		<td class="flex"><button onclick="getOperator('/')">/</button></td>
   	     	</tr>
 
   	     	<tr>
-  	     		<td> <input type="button" value="7" class="n" data-index='7'> </td>
-  	     		<td> <input type="button" value="8" class="n" data-index='8'> </td>
-  	     		<td> <input type="button" value="9" class="n" data-index='9'> </td>
-  	     		<td class="flex"> <input type="button" value="X"> </td>
+  	     		<td> <button onclick="getNumber(7)">7</button></td>
+  	     		<td> <button onclick="getNumber(8)">8</button></td>
+  	     		<td> <button onclick="getNumber(9)">9</button></td>
+  	     		<td class="flex"> <button onclick="getOperator('*')">x</td>
   	     	</tr>
 
   	     	<tr>
-  	     		<td> <input type="button" value="4" class="n" data-index='4'> </td>
-  	     		<td> <input type="button" value="5" class="n" data-index='5'> </td>
-  	     		<td> <input type="button" value="6" class="n" data-index='6'> </td>
-  	     		<td class="flex"> <input type="button" value="-"> </td>
+  	     		<td> <button onclick="getNumber(4)">4</button></td>
+  	     		<td> <button onclick="getNumber(5)">5</button></td>
+  	     		<td> <button onclick="getNumber(6)">6</button></td>
+  	     		<td class="flex"> <button onclick="getOperator('-')">-</td>
   	     	</tr>
 
   	     	<tr>
-  	     		<td> <input type="button" value="1" class="n" data-index='1'> </td>
-  	     		<td> <input type="button" value="2" class="n" data-index='2'> </td>
-  	     		<td> <input type="button" value="3" class="n" data-index='3'> </td>
-  	     		<td class="flex"> <input type="button" value="+"> </td>
+  	     		<td> <button onclick="getNumber(1)">1</button></td>
+  	     		<td> <button onclick="getNumber(2)">2</button></td>
+  	     		<td> <button onclick="getNumber(3)">3</button></td>
+  	     		<td class="flex"> <button onclick="getOperator('+')">+</td>
   	     	</tr>
 
   	     	<tr>
-  	     		<td> <input type="button" value="0" class="n" data-index='0'> </td>
-  	     		<td> <input type="button" value="."> </td>
-  	     		<td colspan="2" class="flex" id="flow"> <input type="button" value="="> </td> 	     		
+  	     		<td> <button onclick="getNumber(0)">0</button></td>
+  	     		<td> <button onclick="getDecimal('.')">.</button></td>
+  	     		<td colspan="2" class="flex" id="flow"> <button onclick="calculate()">=</button></td> 	     		
   	     	</tr>
   	     </table>
   		
   	</section>
   </main>
-   
+  
 
-  <script type="module" src="scripts/calScript.js"></script>
+  <script src="scripts/calScript.js"></script>
 
 </body>
 </html>
